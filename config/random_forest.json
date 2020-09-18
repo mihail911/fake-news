@@ -1,0 +1,13 @@
+{
+  "model": "random_forest",
+  "train_data_path": "data/processed/cleaned_train_data.json",
+  "val_data_path": "data/processed/cleaned_val_data.json",
+  "test_data_path": "data/processed/cleaned_test_data.json",
+  "featurizer_output_path": "model_checkpoints/random_forest",
+  "credit_bins_path": "data/processed/optimal_credit_bins.json",
+  "model_output_path": "model_checkpoints/random_forest",
+  "evaluate": false,
+  "params": {
+
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Fake News Detector",
+  "version": "1.0",
+  "description": "Detect fake news on your browser page",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "declarativeContent"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "images/trump_amca_16.png",
+      "32": "images/trump_amca_32.png",
+      "48": "images/trump_amca_48.png",
+      "128": "images/trump_amca_128.png"
+    }
+  },
+  "icons": {
+    "16": "images/trump_amca_16.png",
+    "32": "images/trump_amca_32.png",
+    "48": "images/trump_amca_48.png",
+    "128": "images/trump_amca_128.png"
+  },
+  "web_accessible_resources": [
+    "images/trump_amca_16.png",
+    "images/trump_amca_32.png",
+    "images/trump_amca_48.png",
+    "images/trump_amca_128.png"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2
+}

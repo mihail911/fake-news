@@ -1,0 +1,23 @@
+name: run-tests
+on: [push]
+defaults:
+  run:
+    working-directory: /home/fake-news
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    container:
+      image: ${{ secrets.DOCKERHUB_IMAGE }}
+      credentials:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PAT }}
+    steps:
+      - name: Set PYTHONPATH env var
+        run: echo "PYTHONPATH=$PYTHONPATH:/home/fake-news" >> $GITHUB_ENV
+      - name: Set GE_DIR env var
+        run: echo "GE_DIR=`pwd`" >> $GITHUB_ENV
+      - name: Run unit tests
+        run: pytest tests/
+      - name: Run great expectations data tests
+        working-directory: /home/fake-news/tests
+        run: python great_expectations/validate_data.py

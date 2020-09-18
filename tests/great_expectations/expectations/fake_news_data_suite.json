@@ -1,0 +1,105 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "fake_news_data_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "id",
+          "statement_json",
+          "label",
+          "statement",
+          "subject",
+          "speaker",
+          "speaker_title",
+          "state_info",
+          "party_affiliation",
+          "barely_true_count",
+          "false_count",
+          "half_true_count",
+          "mostly_true_count",
+          "pants_fire_count",
+          "context",
+          "justification"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "label",
+        "value_set": [
+          true,
+          false
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_value_lengths_to_be_between",
+      "kwargs": {
+        "column": "statement",
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "pants_fire_count",
+        "min_value": 0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "barely_true_count",
+        "min_value": 0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "false_count",
+        "min_value": 0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "half_true_count",
+        "min_value": 0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "mostly_true_count",
+        "min_value": 0
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "citations": [
+      {
+        "batch_kwargs": {
+          "data_asset_name": "cleaned_train_data",
+          "datasource": "fake_news_data",
+          "path": "../../data/processed/cleaned_train_data.json"
+        },
+        "batch_markers": null,
+        "batch_parameters": null,
+        "citation_date": "20201229T204420.438250Z",
+        "comment": "New suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.13.4"
+  }
+}

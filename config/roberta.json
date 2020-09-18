@@ -1,0 +1,18 @@
+{
+  "model": "roberta",
+  "train_data_path": "data/processed/cleaned_train_data.json",
+  "val_data_path": "data/processed/cleaned_val_data.json",
+  "test_data_path": "data/processed/cleaned_test_data.json",
+  "credit_bins_path": "data/processed/optimal_credit_bins.json",
+  "model_output_path": "model_checkpoints/roberta",
+  "tokenizer_path": "roberta-base",
+  "type": "roberta-base",
+  "evaluate": false,
+  "batch_size": 64,
+  "max_seq_len": 64,
+  "learning_rate": 3e-5,
+  "num_epochs": 5,
+  "params": {
+
+  }
+}
