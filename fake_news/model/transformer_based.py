@@ -26,7 +26,6 @@ class RobertaModule(pl.LightningModule):
         super().__init__()
         base_dir = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
         full_model_output_path = os.path.join(base_dir, config["model_output_path"])
-        # TODO (mihail): Fix how this `model_type` is defined
         self.config = config
         self.classifier = RobertaForSequenceClassification.from_pretrained(config["type"],
                                                                            cache_dir=full_model_output_path)
