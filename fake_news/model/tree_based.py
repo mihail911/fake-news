@@ -30,7 +30,7 @@ class RandomForestModel(Model):
         self.featurizer = TreeFeaturizer(os.path.join(config["featurizer_output_path"],
                                                       "featurizer.pkl"),
                                          config)
-        if config["evaluate"] and not os.path.exists(model_cache_path):
+        if "evaluate" in config and config["evaluate"] and not os.path.exists(model_cache_path):
             raise ValueError("Model output path does not exist but in `evaluate` mode!")
         if model_cache_path and os.path.exists(model_cache_path):
             LOGGER.info("Loading model from cache...")
