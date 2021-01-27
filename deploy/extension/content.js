@@ -56,6 +56,6 @@ document.addEventListener("mouseup", (event) => {
         })
         .catch((error) => {
             console.error("Error:", error);
-        });;
+        });
 
 });

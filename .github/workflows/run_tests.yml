@@ -7,7 +7,7 @@ jobs:
   run-tests:
     runs-on: ubuntu-latest
     container:
-      image: ${{ secrets.DOCKERHUB_IMAGE }}
+      image: custom-image
       credentials:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PAT }}
