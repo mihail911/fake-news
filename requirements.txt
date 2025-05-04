@@ -16,7 +16,7 @@ pytorch-lightning==1.1.2
 shap==0.37.0
 sklearn==0.0
 torchvision==0.7.0
-transformers==3.5.0
+transformers==4.50.0
 shap==0.37.0
 sklearn==0.0
 uvicorn==0.13.3
@@ -24,3 +24,4 @@ uvloop==0.14.0
 vadersentiment==3.3.2
 watchgod==0.6
 websockets==8.1
+setuptools>=78.1.1 # not directly required, pinned by Snyk to avoid a vulnerability
