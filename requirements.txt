@@ -6,7 +6,7 @@ gensim==3.8.3
 great-expectations==0.13.4
 httptools==0.1.1
 matplotlib==3.3.2
-mlflow==1.13
+mlflow==3.1.1
 nrclex==2.0.2
 pip-chill==1.0.0
 plotly==4.11.0
@@ -16,7 +16,7 @@ pytorch-lightning==1.1.2
 shap==0.37.0
 sklearn==0.0
 torchvision==0.7.0
-transformers==3.5.0
+transformers==4.52.0
 shap==0.37.0
 sklearn==0.0
 uvicorn==0.13.3
@@ -24,3 +24,5 @@ uvloop==0.14.0
 vadersentiment==3.3.2
 watchgod==0.6
 websockets==8.1
+protobuf>=4.25.8 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
