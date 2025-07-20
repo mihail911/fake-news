@@ -16,7 +16,7 @@ pytorch-lightning==1.1.2
 shap==0.37.0
 sklearn==0.0
 torchvision==0.7.0
-transformers==3.5.0
+transformers==4.52.0
 shap==0.37.0
 sklearn==0.0
 uvicorn==0.13.3
