@@ -6,7 +6,7 @@ gensim==3.8.3
 great-expectations==0.13.4
 httptools==0.1.1
 matplotlib==3.3.2
-mlflow==1.13
+mlflow==2.21.0
 nrclex==2.0.2
 pip-chill==1.0.0
 plotly==4.11.0
