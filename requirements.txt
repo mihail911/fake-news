@@ -24,3 +24,4 @@ uvloop==0.14.0
 vadersentiment==3.3.2
 watchgod==0.6
 websockets==8.1
+urllib3>=2.6.0 # not directly required, pinned by Snyk to avoid a vulnerability
