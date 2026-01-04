@@ -6,7 +6,7 @@ gensim==3.8.3
 great-expectations==0.13.4
 httptools==0.1.1
 matplotlib==3.3.2
-mlflow==1.13
+mlflow==3.8.0
 nrclex==2.0.2
 pip-chill==1.0.0
 plotly==4.11.0
@@ -16,7 +16,7 @@ pytorch-lightning==1.1.2
 shap==0.37.0
 sklearn==0.0
 torchvision==0.7.0
-transformers==3.5.0
+transformers==5.0.0rc1
 shap==0.37.0
 sklearn==0.0
 uvicorn==0.13.3
