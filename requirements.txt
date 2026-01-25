@@ -24,3 +24,6 @@ uvloop==0.14.0
 vadersentiment==3.3.2
 watchgod==0.6
 websockets==8.1
+pyasn1>=0.6.2 # not directly required, pinned by Snyk to avoid a vulnerability
+torch>=2.10.0 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.46.2 # not directly required, pinned by Snyk to avoid a vulnerability
